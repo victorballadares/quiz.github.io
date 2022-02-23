@@ -1,0 +1,89 @@
+*{
+    font-family: 'Rubik', sans-serif;
+    color: #FDFFFC;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 20vh 0;
+    padding: 0;
+    background-color: #011627;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+.textoIntro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 10vh 2vh;
+    padding: 20px;
+    border-style:solid;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+.textoIntro > p{
+    margin: 0;
+    padding: 10px;
+} 
+
+.linkQuiz{
+    position: relative;
+    display: block;
+    color: #FF0022;
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #FF0022;
+    border-radius: 10px;
+    padding: 14px 60px;
+    transition: 1s all ease;
+  }
+
+  .linkQuiz::before{
+    background-color: #FF0022;
+    border-radius: 8px;
+    color: #FDFFFC;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+    width: 100%;
+    height: 0%;
+  }
+
+  .linkQuiz:hover::before{
+    height: 100%;
+    color: #FDFFFC;;
+  }
+
+  .linkQuiz:hover{
+    height: 100%;
+    color: #FDFFFC;;
+  }
+
+  @media screen and (min-width: 600px){
+    
+    .textoIntro{
+        font-size: x-large;
+    } 
+    
+  }
+
+  @media screen and (min-width: 1000px){
+
+    .textoIntro{
+        font-size: larger;
+        margin: 0 30vw;
+    }
+
+      
+}
+© 2022 GitHub, Inc.
